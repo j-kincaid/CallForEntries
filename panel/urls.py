@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('panel', views.panel),
-    path('authorized', views.authorized)
+    path('authorized', views.authorized),
 ]
