@@ -1,6 +1,7 @@
 from django.contrib import admin
+from . import models
 
+class PanelAdmin(admin.ModelAdmin):
+    list_display = ('full_name',)
 
-# Register your models here.
-# These models can be displayed and modified via the Django Admin interface. 
-
+admin.site.register(models.Panel, PanelAdmin)
