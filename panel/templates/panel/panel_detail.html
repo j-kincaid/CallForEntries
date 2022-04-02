@@ -1,6 +1,22 @@
-<html>
+{% extends "base.html" %}
 
-    <h1> {{ panel.full_name }}</h1>
+{% block content %}
+<div class="border round">
+    <h1 class="my-5"> </h1>
+    <p>{{  }}</p>
+</div>
+{% endblock %}
 
-    <p>{{ panel.bio }}</p>
-</html>
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="border round">
+    <h1 class="my-5">{{panel.full_name}}</h1>
+    <p>{{panel.bio}}</p>
+</div>
+
+<a href="{% url 'panel.list' %}" class="btn btn-secondary">Back</a>
+<a href="{% url 'panel.upadte' pk=panel.id %}" class="btn btn-secondary">Edit</a>
+
+{% endblock %}

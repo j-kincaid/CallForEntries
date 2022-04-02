@@ -3,7 +3,8 @@ from . import views
 
 
 urlpatterns = [
-    path('panel', views.PanelView.as_view()),
-    path('authorized', views.AuthorizedView.as_view()),
-    path('panel/<int:pk>', views.PanelListView.as_view()),
+    path('panel/<int:pk>', views.PanelListView.as_view(), name="panel.list"),
+    path('panel/<int:pk>', views.PanelDetailView.as_view(), name="panel.detail"),
+    path('panel/new', views.PanelCreateView.as_view(), name="panel.new"),
+    path('panel/<int:pk>/edit', views.PanelUpdateView.as_view(), name="panel.update"),
 ]

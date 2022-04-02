@@ -1,13 +1,15 @@
-{% load static %}
+{% extends "base.html" %}
 
-<html>
+{% block content %}
+<form method='POST'>{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary my-5">Submit</button>
+</form>
+{% if form.errors %}
+<div class="alert alert-danger my-5">
+    {{form.errors.title.as_text}}
+</div>
+{% endif %}
+<a href="{% url 'panel.list' %}" class="btn btn-secondary">Cancel</a>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-    </head>
-    <ul>
-        {% for panel in panels %}
-            <li class="panel-li"> {{ panel.full_name }}</li>
-        {% endfor %}
-    </ul>
-</html>
+{% endblock %}
