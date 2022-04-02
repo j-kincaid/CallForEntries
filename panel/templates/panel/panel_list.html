@@ -1,0 +1,13 @@
+{% load static %}
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    </head>
+    <ul>
+        {% for panel in panels %}
+            <li class="panel-li"> {{ panel.full_name }}</li>
+        {% endfor %}
+    </ul>
+</html>
