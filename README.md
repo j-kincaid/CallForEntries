@@ -27,9 +27,16 @@ An app providing a rubric to assist nonprofit arts organizations in selecting ar
 |    |       |       |      |  
 | Panelist | Likely BFA in Music, Dance, Studio Art, Theater, Creative Writing, Art History, or a related discipline. Could also be a critic or activist. | Build professional reputation; academic and professional advancement; influence an art movement. | Balancing multiple responsibilities of teaching, lecturing, and own creative practice. |
 
-
-
 ## Database Design
+
+### Examples 
+| Models | Model field arguments |
+| --- | ------ | 
+| Originality, Technique, Impact | ManyToManyField.related_query_name |
+| Artists | ForeignKey.related_name |
+| Panelists | ForeignKey.related_name |
+
+
 
 ![Curator's Assistant](https://user-images.githubusercontent.com/11914762/159535642-13b74456-1df3-45be-a0ed-f423373ca20c.png)
 
