@@ -32,7 +32,7 @@ An app providing a rubric to assist nonprofit arts organizations in selecting ar
 ### Examples 
 | Models | Model field arguments |
 | --- | ------ | 
-| Originality, Technique, Impact | ManyToManyField.related_query_name |
+| Innovation, Technique, Impact | ManyToManyField.related_query_name |
 | Artists | ForeignKey.related_name |
 | Panelists | ForeignKey.related_name |
 
