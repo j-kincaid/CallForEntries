@@ -29,16 +29,10 @@ An app providing a rubric to assist nonprofit arts organizations in selecting ar
 
 ## Database Design
 
-### Examples 
-| Models | Model field arguments |
-| --- | ------ | 
-| Innovation, Technique, Impact | ManyToManyField.related_query_name |
-| Artists | ForeignKey.related_name |
-| Panelists | ForeignKey.related_name |
 
 
+![CreativeCall](https://user-images.githubusercontent.com/11914762/163836207-99e14647-b594-4bc8-9399-0b255df558c5.png)
 
-![Curator's Assistant](https://user-images.githubusercontent.com/11914762/159535642-13b74456-1df3-45be-a0ed-f423373ca20c.png)
 
 
 
