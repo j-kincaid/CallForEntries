@@ -2,7 +2,7 @@
 
 ### CONCEPT:
 
-I first became acquainted with the tradition of Crit Night when I regularly attended events at Plug Projects, one of Kansas City's alternative Arts Exhibition spaces. 
+I first became acquainted with the tradition of Critique Night (CRIT NIGHT) through Plug Projects, one of Kansas City's alternative Arts Exhibition spaces. 
 
 CRIT NIGHT is: 
 
@@ -33,15 +33,14 @@ Plug is in its 11th year now. The Crit Night app is designed to track responses 
 
 | Role | Education | Goals |
 | --- | ------ | -------- |    
-| Artist | Likely BFA in Music, Dance, Studio Art, Theater, Creative Writing, Art History, or a related discipline, or self-taught. | Obtain feedback on works in progress, and enable the art to be seen by a wider audience. | 
+| Artist | Likely emerging or mid-career artist. May have a degree in Music, Dance, Studio Art, Theater, Creative Writing, Art History, or a related discipline, or self-taught. | Obtain feedback on works in progress, and enable the art to be seen by a wider audience. | 
 |    |       |       |      
-| Panelist | Similar background as Artist. Could also be a critic or activist. | Build professional reputation; academic and professional advancement; influence an art movement. | 
+| Moderator | Similar background as Artist, often with experience curating exhibitions or teaching art. Could be an art critic or activist. | Build professional reputation; academic and professional advancement; influence an art movement. | 
 |    |       |       |      
-| Walk-in Guest | All education levels | Anyone looking for a fun cultural activity | 
+| Guest/Public | All education levels | Anyone interested in art and looking for a fun cultural activity | 
 
-### Database Design
 
-![CreativeCall](https://user-images.githubusercontent.com/11914762/163627684-7833e244-df0f-4211-84f3-3607a9b961fd.png)
+
 
 
 
