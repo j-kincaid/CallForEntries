@@ -37,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # apps
-    'panel',
-    'artists',
+    'artists.apps.ArtistsConfig',
+    'artworks.apps.ArtworksConfig',
+    'panel.apps.PanelConfig',
 ]
 
 MIDDLEWARE = [
