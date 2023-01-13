@@ -2,9 +2,20 @@
 
 {% block content %}
 
-<h1>{{artwork.title}}</h1>
-<br>
+<div class="container">
+<img style="max-width: 500px;" src="{{ artwork.featured_image.url }}">
+<hr>
+<h2>{{artwork.title}}</h2>
 <p>{{artwork.description}}</p>
+<hr>
+{% for tag in artwork.tags.all %}
+    <span style="border:1px solid darkgrey;">{{tag}}</span>
+    <br />
+    <span style="border:1px solid darkgrey;">{{artwork.vote_ratio}}</span>
+{%  endfor %}
+</div>
+<hr>
+<br/>
 
 
 {% endblock content %}
