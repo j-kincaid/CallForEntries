@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+
+<p>Hello you are on the {{page}} page.</p>
+
+{% if number > 10 %}
+    <p>Number is greater than 10.</p>
+{% elif number == 10 %}
+    <p>Number is exactly 10.</p>
+{% else %}
+    <p>Number is less than 10.</p>
+{% endif %}
+
+<hr>
+
+<h1>Artworks List</h1>
+
+<p>We'll talk about these artworks tonight:</p>
+<ul>
+    {% for artwork in artworks %}
+    <li>Title:<a href="{% url 'artwork' artwork.id %}"> {{artwork.title}}</a></li>
+    <li>Description: {{artwork.description}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
