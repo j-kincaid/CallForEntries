@@ -17,17 +17,13 @@
           {% for artwork in artworks %}
         <div class="row row-cols-6">
             <div class="col">Artwork</div>
-            <div class="col">Originality</div>
-            <div class="col">Technique</div>
-            <div class="col">Impact</div>
-            <div class="col">Final Score</div>
+            <div class="col">Votes</div>
+            <div class="col">Ratio</div>
         </div>
         <div class="row row-cols-6">
             <div class="col"> {{artwork.title}}</div>
-            <div class="col"> {{artwork.vote_ratio}}%</div>
-            <div class="col"> {{artwork.vote_ratio}}%</div>
-            <div class="col"> {{artwork.vote_ratio}}%</div>
             <div class="col"> {{artwork.vote_total}}%</div>
+            <div class="col"> {{artwork.vote_ratio}}%</div>
         </div>
 
         {% endfor %}

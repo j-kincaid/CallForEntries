@@ -35,7 +35,9 @@ class Review(models.Model):
         ("five_stars", 5),
     )
     value = models.CharField(max_length=200, choices=VOTE_TYPE)
-    body = models.TextField(null=True, blank=True)
+    what_works = models.TextField(null=True, blank=True)
+    needs_work = models.TextField(null=True, blank=True)
+    might_work = models.TextField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(
         default=uuid.uuid4, unique=True, primary_key=True, editable=False
